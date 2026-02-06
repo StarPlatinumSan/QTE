@@ -498,3 +498,104 @@ body {
   color: rgba(255, 255, 255, 0.75);
   font-size: 12px;
 }
+
+/* MOBILE ONLY */
+@media (max-width: 720px) {
+  .topBar {
+    height: auto;
+    padding: 18px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .topRight {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .settingsPanel {
+    padding: 0 18px;
+  }
+
+  .settingsPanel.open {
+    max-height: 520px;
+    padding: 16px 18px 20px;
+  }
+
+  .settingsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .segmented {
+    gap: 6px;
+  }
+
+  .segBtn {
+    flex: 1 1 calc(50% - 6px);
+  }
+
+  .livesControls {
+    flex-wrap: wrap;
+  }
+
+  .rangeRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rangeValue {
+    text-align: left;
+  }
+
+  .arena {
+    min-height: 360px;
+  }
+
+  .circle {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+
+  .bottomBar {
+    height: auto;
+    padding: 18px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .score {
+    text-align: center;
+  }
+
+  .bottomButtons {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+
+  .btnStart,
+  .btnReset {
+    min-width: 0;
+  }
+
+  .byline {
+    text-align: center;
+  }
+
+  .hint {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    max-width: none;
+  }
+}
