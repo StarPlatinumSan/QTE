@@ -518,7 +518,7 @@ export default function App() {
 
           {!playing && !failed && !completed && (
             <div className="hint">
-              Tap QTE circles before the ring ends.
+              Tap the QTE circles before the ring ends.
               <br />
               Clicking anywhere else costs a life.
             </div>
