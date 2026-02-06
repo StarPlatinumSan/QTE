@@ -294,6 +294,7 @@ export default function App() {
 
   useEffect(() => {
     if (playing) return;
+    if (failed || completed) return;
 
     if (isInfiniteLives) {
       setLives(1);
