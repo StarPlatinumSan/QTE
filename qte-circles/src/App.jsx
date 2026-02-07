@@ -3,11 +3,11 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 const DEFAULT_LIVES = 3;
 
 const DIFFICULTY_PRESETS = {
-  Easy: { lifetimeMs: 1200, spawnEveryMs: 720 },
-  Medium: { lifetimeMs: 1000, spawnEveryMs: 660 },
-  Hard: { lifetimeMs: 900, spawnEveryMs: 600 },
-  Extreme: { lifetimeMs: 750, spawnEveryMs: 500 },
-  Agony: { lifetimeMs: 600, spawnEveryMs: 400 },
+  Easy: { lifetimeMs: 1000, spawnEveryMs: 720 },
+  Medium: { lifetimeMs: 900, spawnEveryMs: 600 },
+  Hard: { lifetimeMs: 700, spawnEveryMs: 500 },
+  Extreme: { lifetimeMs: 600, spawnEveryMs: 450 },
+  Agony: { lifetimeMs: 500, spawnEveryMs: 400 },
 };
 
 const MIN_DURATION_SEC = 5;
